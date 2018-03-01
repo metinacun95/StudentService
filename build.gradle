@@ -25,5 +25,12 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
+	
+	//MongoDb
+	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+	
+	// Kafka
+    compile ("org.springframework.kafka:spring-kafka:1.1.3.RELEASE")
+    
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
