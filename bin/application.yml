@@ -1,0 +1,19 @@
+server:
+  port: 8071
+
+spring:
+  application:
+    name: student-service
+    
+  kafka:
+    bootstrap-servers: 217.78.105.5:9092
+    consumer:
+      group-id: student
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+kafka:  
+  groupId: student
+  topic:
+    consumer: student
